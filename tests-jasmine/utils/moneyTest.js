@@ -1,4 +1,4 @@
-import {formatCurrency} from '../scripts/utils/money.js'
+import {formatCurrency} from '../../scripts/utils/money.js'
 
 describe('test suite: format currency',()=>{
 
@@ -18,6 +18,6 @@ describe('test suite: format currency',()=>{
 
     it('rounds-down', () => {
         expect(formatCurrency(2000.4)).toBe("20.00")
-        });
+        }); 
 
 })
