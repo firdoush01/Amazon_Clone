@@ -2,7 +2,9 @@ import {cart} from '../../data/cart.js'
 import { getProduct } from '../../data/products.js'
 import {getDeliveryOption} from '../../data/deliveryOptions.js'
 import {formatCurrency} from '../utils/money.js'
-import {paymentGateway} from 'paymentGateway.js'
+// import {paymentGateway} from 'paymentGateway.js'
+// The above line is causing an error because the paymentGateway.js file is not present in the scripts/checkout folder.
+
 export function renderPaymentSummary(){
 
     let productPriceCents = 0;
